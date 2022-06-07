@@ -36,11 +36,12 @@ div.square{
 
 div.options{
     display: inline-block;
-    width: 50%;
-    margin: 0px 0px 0px 30px;
+    width: 35%;
+    margin: 0px 0px 0px 20px;
 }
 
 div.slider{
+    width: 100%;
     margin: auto;
 }
 
@@ -50,7 +51,7 @@ input.grid-slider{
     background-color: transparent;
     margin: 12px 0;
     display: block;
-    width: 38%;
+    width: 45%;
 }
 
 input.grid-slider::-webkit-slider-runnable-track{
