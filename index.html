@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Etch-a-Sketch</h1>
+        <div id="app-body">
+            
+        <div id="grid-container">
+        </div>
+
+        <div class="options">
+            <h2>Options</h2>
+
+            <h3>Select Color</h3>
+            <input type="color" id="color_picker" value="#000000" oninput="set_color(this.value)">
+
+        <div class="slider">
+            <h3 id="size-label">Size:</h3> <p id="rangeValue">16 x 16</p><input id="range-slider" type="range" min="1" max="64" value="16" oninput="load_new_grid(this.value); rangeValue.innerText = this.value + ' x ' + this.value;" class="grid-slider">
+            
+          </div>
+        
+          
+
+        <button onclick="toggle_rainbow_mode()"><p id="rainbow-mode-label">Rainbow Mode ON</p></button>
+
+        <button onclick="clear_board(document.getElementById('range-slider').value)"><p>Clear Board</p></button>
+    </div>
+</div>
+<footer>
+    <p>Copyright © Ryan Loi. 2022</p>
+</footer>
+
+        <script src="script.js" async defer></script>
+    </body>
+</html>

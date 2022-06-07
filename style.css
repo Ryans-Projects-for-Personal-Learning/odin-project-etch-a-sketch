@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+body {
+    background-color: #F0F0F0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+div#app-body{
+    display: flex;
+    margin: auto;
+    width: 50%;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+div#grid-container{
+    float: right;
+    margin: auto;
+    display: grid;
+    width: 600px;
+    height: 600px;
+    border-style: solid;
+    border-width: 4px;
+}
+
+div.square{
+    border-style: solid;
+    display: inline-block;
+    border-width: 1px;
+    border-color: #F0F0F0;
+    background-color: #FFFFFF;
+}
+
+div.options{
+    display: inline-block;
+    width: 50%;
+    margin: 0px 0px 0px 30px;
+}
+
+div.slider{
+    margin: auto;
+}
+
+input.grid-slider{
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    margin: 12px 0;
+    display: block;
+    width: 38%;
+}
+
+input.grid-slider::-webkit-slider-runnable-track{
+    background: #FFFFFF;
+    border-style: solid;
+    border-color: #000000;
+}
+
+input.grid-slider::-moz-range-track{
+    background: #FFFFFF;
+    border-style: solid;
+    border-color: #000000;
+}
+
+input.grid-slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+   appearance: none;
+   background: #000000;
+   height: 1rem;
+   width: 1rem;
+}
+
+input.grid-slider::-moz-range-thumb{
+    -webkit-appearance: none;
+   appearance: none;
+   background: #F0F0F0;
+   height: 2rem;
+   width: 1rem;
+}
+
+p#rangeValue{
+    display: inline;
+}
+
+h3#size-label{
+    margin-top: 16px;
+    display: inline;
+}
+
+input[type="color"]{
+    display: inline-block;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border-style: none;
+}
+
+input[type="color"]::-webkit-color-swatch{
+    border-radius: 50%;
+}
+
+button{
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    width: 150px;
+    padding: 4px;
+    margin: 12px 0 0 0;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: #000000;
+}
+
+footer{
+    width: 50%;
+    display: block;
+    margin: 40px auto 0px auto;
+}
